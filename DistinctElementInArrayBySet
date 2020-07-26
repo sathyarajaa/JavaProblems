@@ -1,0 +1,26 @@
+/*Program to print all the distinct elements in an array is discussed here. Distinct elements are nothing but the unique (non-duplicate) elements present in the given array.
+SAMPLE INPUT:
+9 = size of an array
+2 3 4 5 6 1 2 3 4 = array elements
+SAMPLE OUTPUT:
+2 3 4 5 61*/
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 Scanner sc=new Scanner(System.in);
+     int n=sc.nextInt();
+     Integer arr[]=new Integer[n];
+     for(int i=0;i<n;i++)
+     arr[i]=sc.nextInt();
+     Set<Integer> s=new LinkedHashSet<>(Arrays.asList(arr));
+     Integer brr[]=new Integer[s.size()];
+     s.toArray(brr);
+     for(int i:brr)
+     System.out.print(i+" ");
+     
+     
+	}
+}
