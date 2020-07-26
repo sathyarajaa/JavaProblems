@@ -1,0 +1,24 @@
+/*Program to replace a substring in a string is discussed here. The steps for replacing a substring with another string are given below.
+Input:
+hi hello
+string to be replaced: hi
+string to be replaced with: hey
+
+output: hey hello*/
+
+import java.util.*;
+public class Main
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the string: ");
+String str = sc.nextLine();
+System.out.println("Enter the string to be replaced: ");
+String old_str = sc.nextLine();
+System.out.println("Enter the new string: ");
+String new_str = sc.nextLine();
+String replaced = str.replace(old_str, new_str);
+System.out.println("replaced string: " + replaced);
+}
+}
