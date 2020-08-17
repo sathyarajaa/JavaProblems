@@ -1,0 +1,23 @@
+Input:Today is nice day
+Output:dayoT si cein ayd
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String res="";
+		String word[]=s.split(" ");
+		for(String x:word){
+		    int l=x.length()/2;
+		    String s1=x.substring(l,x.length());
+		    StringBuilder s2=new StringBuilder(x.substring(0,l));
+		    s2.reverse();
+		    String s3=s2.toString();
+		    res+=s1+s3+" ";
+		    }
+		System.out.println(res);
+	}
+}
